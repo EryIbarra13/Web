@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JURASSIC WORLD</title>
+  <link rel="stylesheet" href="misestilos.css">
+</head>
+<body style="background-color: rgb(82, 82, 83);">
+  <div id="envoltura">
+    <header id="cabecera">
+      <img id="LogoJurassic" src="https://aurimoda.com.mx/wp-content/uploads/2016/07/10.-Jurassic-world.png" alt="Logo de Jurassic world">
+    </header>
+
+    <nav id="textoenmov">
+      <p id="Textoenmovimiento" class="Textoenmovimiento">WELCOME TO JURASSIC WORLD///BIENVENIDO A JURASSIC WORLD///BIENVENUE DANS JURASSIC WORLD///歡迎來到侏羅紀世界</p>
+      <nav id="botones">
+        <a href="Sobreparque.html" style="text-decoration:none;">
+          <button id=botonSP>
+          <h1 class="texto-con-borde">Sobre el parque:</h1>
+          </button>
+        </a>
+
+        <a href="index.html" style="text-decoration:none;">
+          <button id=botonHome>
+          <h1 class="texto-con-borde">Inicio:</h1>
+          </button>
+        </a>
+
+        <a href="Atracciones.html" style="text-decoration:none;">
+          <button id=botonAtra>
+            <h1 class="texto-con-borde">Atracciones:</h1>
+          </button>
+        </a>
+
+        <a href="pagina-destino.html" style="text-decoration:none;">
+          <button id=botonHos>
+          <h1 class="texto-con-borde">Hospedaje</h1>
+          </button>
+        </a>
+      </nav>
+    </nav>
+    <nav class="paginacentral">
+      <div class="Imagenazul"></div>
+      <div class="CentroB">
+        <h1 style="font-size: 70px;">Venta de boletos:</h1>
+        <p>Cada boleto incluye acceso al parque por los dias seleccionados, hospedaje es un costo extra</p>
+        <p>(Incluye atracciones, uso ilimitado del ferry y bebidas no alcoholicas)</p>
+        <img style="width: 300px;"src="https://i.pinimg.com/1200x/dc/6c/fa/dc6cfa8b41c6af7c9426b941294f70cd.jpg">
+        <div class="container">
+  <div class="ticket-controls">
+    <button id="disminuir">-</button>
+    <input type="text" id="cantidad" value="1" readonly />
+    <button id="agregar">+</button>
+  </div>
+  <div class="total">
+    Boletos seleccionados: <span id="totalBoletos">1</span>
+  </div>
+  <div class="ticket-form">
+    <h3>Seleccionar tipo de acceso:</h3>
+    <form id="compraForm">
+      <label for="tipoEvento">Tipo de acceso:</label>
+      <select id="tipoEvento" required>
+        <option value="" disabled selected>Seleccione un tipo de acceso</option>
+        <option value="Pase Sin hospedaje 1 dia" data-precio="250">Pase 1 dia - $250</option>
+        <option value="Pase Hospedaje 3 dias" data-precio="800">Pase con hospedaje 3 dia - $350</option>
+        <option value="PaseVIP 3 dias" data-precio="500">Pase VIP (Hospedaje y visita a laboratorios iNGEN) - $500</option>
+      </select>
+      <button type="submit">Calcular Total</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+</div>
+      </div>
+        <div class="Imagenroja"></div>
+    </nav>
+
+
+    
+    
+  </div>
+
+  <script src="java.js"></script>
+</body>
+</html>
