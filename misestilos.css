@@ -143,7 +143,7 @@ text-align:center;
 .Imagenazul{
     flex: 0.4;
     background-color: black;
-    background-image: url(lateral.png);
+    background-image: url('lateral.png');
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -291,7 +291,7 @@ button[type="submit"] {
     background-color: black;
     flex: 0.4;
     background-color: black;
-    background-image: url(lateral.png);
+    background-image: url('lateral.png');
     text-align: center;
     background-size: cover;
     background-position: center;
